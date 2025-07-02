@@ -12,7 +12,7 @@ while True:
     for (x, y, w, h) in faces:
         cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 5)
         cv2.imshow('Face Detection', image)
-        if cv2.waitKey(1) & 0xFF == 27:  # Press 'Esc' to exit
+        if cv2.waitKey(1) & 0xFF == 27:  
             break
 capture.release()
 cv2.destroyAllWindows()
